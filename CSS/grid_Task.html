@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Gallery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 500px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 5px;
+            padding: 5px;
+            background: white;
+        }
+
+        .box {
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .top {
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box top">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgF31ipCQCV6aRxvxLultIf26zBf9b1JGJclelzCN-NA&s=10">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBZ8p8MAMMxvmefR-7f950wCcx0ybekdEtRb6fntxjRg&s=10">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-fQklSOgcewSbYgaIH-bgTdLXRPV6thV8gDZPB_prQ&s=10">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYUNXrc74GoGG1NN4i29iaQVm5FBY1C5KmUsvt729Sg&s=10">
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMGbNS7n3k5Y8mKJ-GuJHUSX8Z4reaBHPZZxsq1mTxA&s=10">
+        </div>
+
+    </div>
+
+</body>
+</html>
